@@ -46,7 +46,7 @@ export default class Stopwatch extends Component {
   };
 
   render() {
-    var seconds = Math.floor(this.state.elapsedTime / 1000);
+    const seconds = Math.floor(this.state.elapsedTime / 1000);
     return (
       <div className="stopwatch" >
         <h2>Stopwatch</h2>
@@ -58,7 +58,6 @@ export default class Stopwatch extends Component {
         }
         <button onClick={this.onReset}>Reset</button>
       </div>
-    )
+    );
   }
-
 }

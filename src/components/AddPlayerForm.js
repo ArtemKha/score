@@ -1,20 +1,18 @@
 import React, { Component, PropTypes } from 'react';
 
 export default class AddPlayerForm extends Component {
-  static propTypes: {
+  static propTypes = {
     addPlayer: PropTypes.func.isRequired,
   };
 
-  state = {
-    name: ''
-  };
+  state = { name: '' };
 
-  onNameChange = e => {
+  onNameChange = (e) => {
     const name = e.target.value;
-    this.setState({ name: name });
+    this.setState({ name });
   };
 
-  addPlayer = e => {
+  addPlayer = (e) => {
     if (e) e.preventDefault();
     this.props.addPlayer(this.state.name);
     this.setState({ name: '' });

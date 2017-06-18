@@ -1,6 +1,6 @@
-import React, { Component, PropTypes } from 'react';
-import Stopwatch from './Stopwatch';
+import React, { PropTypes } from 'react';
 import Stats from './Stats';
+import Stopwatch from './Stopwatch';
 
 const Header = props => {
   return (
@@ -10,10 +10,10 @@ const Header = props => {
       <Stopwatch />
     </div>
   );
-}
+};
 
 Header.propTypes = {
-  players: PropTypes.array.isRequired,
+  players: PropTypes.array.isRequired
 };
 
 export default Header;
